@@ -1,0 +1,14 @@
+# vr_haskell_example
+
+Example Haskell application to test Velociraptor/Heroku Haskell buildpack.
+
+## Dev
+
+To run it locally, do:
+
+$> git clone https://github.com/lbolla/vr_haskell_example
+$> cabal sandbox init
+$> cabal install --dependencies-only
+$> cabal run 8888
+
+Visit http://localhst:8888/
