@@ -6,17 +6,23 @@ version:             0.1.0.0
 -- synopsis:            
 -- description:         
 -- license:             
-license-file:        LICENSE
+-- license-file:        LICENSE
 author:              Lorenzo Bolla
 maintainer:          lbolla@gmail.com
 -- copyright:           
 -- category:            
 build-type:          Simple
 -- extra-source-files:  
-cabal-version:       >=1.10
+cabal-version:       >=1.20
 
 executable vr-haskell-example
   main-is:             Main.hs
+
+  -- STATIC LINKING
+  -- ghc-options:         -static -threaded -optl-static -optl-pthread
+  -- ld-options:          -static -pthread
+  -- or run: cabal build --ghc-options "-static -threaded -optl-static -optl-pthread"
+
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base,
